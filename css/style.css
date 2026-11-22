@@ -362,11 +362,32 @@ body {
 
 /* Optional: Make all buttons match a cohesive pastel palette instead of harsh brand colors */
 .button {
-  background-color: rgba(255, 255, 255, 0.85) !important;
   color: #4a4458 !important;
   backdrop-filter: blur(8px);
 }
 
 .button .icon {
   filter: none;
+}
+
+
+/* Fix YouTube to classic Red */
+.button.button-youtube {
+  --button-text: #ffffff;
+  --button-background: #ff0000;
+  --button-border: 1px solid #ff0000;
+}
+
+/* Fix Tumblr to classic Navy Blue */
+.button.button-tumblr {
+  --button-text: #ffffff;
+  --button-background: #001935;
+  --button-border: 1px solid #001935;
+}
+
+/* Style Pixelfed / Pxlmo buttons (Purple/Gradient or Clean Dark) */
+.button.button-pixelfed {
+  --button-text: #ffffff;
+  --button-background: #6364ff;
+  --button-border: 1px solid #6364ff;
 }
